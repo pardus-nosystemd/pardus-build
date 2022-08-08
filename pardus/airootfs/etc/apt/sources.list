@@ -1,5 +1,4 @@
 deb http://depo.pardus.org.tr/pardus yirmibir main contrib non-free
 deb http://depo.pardus.org.tr/guvenlik yirmibir main contrib non-free
 deb http://depo.pardus.org.tr/backports yirmibir-backports main contrib non-free
-# Devuan for nosystemd
-deb http://pkgmaster.devuan.org/devuan stable main
+

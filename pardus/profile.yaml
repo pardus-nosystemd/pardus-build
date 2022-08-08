@@ -16,4 +16,5 @@ customize_airootfs:
   - remove-java.sh
   - package-updates.sh
   - replace-kernel.sh
+  - migrate.sh
 repository: https://depo.pardus.org.tr/pardus

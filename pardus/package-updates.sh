@@ -7,6 +7,3 @@ apt install librewolf -y
 apt install mpv -y
 apt purge gdebi packagekit xterm xfce4-sensors-plugin vlc xarchiver gimp xsane evolution synaptic drawing catfish -y
 apt autoremove -y
-# destroy journalctl garbage
-echo -n > /lib/systemd/systemd-journald
-rm -rf /var/log/journal/*
