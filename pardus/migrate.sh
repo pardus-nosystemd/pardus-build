@@ -5,7 +5,7 @@ deb http://deb.devuan.org/merged stable-security main
 deb http://deb.devuan.org/merged stable-backports main
 EOF
 rm -f /var/lib/dpkg/info/systemd.prerm
-apk-mark hold desktop-base # Do not replace theme
+apt-mark hold desktop-base # Do not replace theme
 apt-get update --allow-insecure-repositories
 apt-get install devuan-keyring --allow-unauthenticated -y
 apt-get update
