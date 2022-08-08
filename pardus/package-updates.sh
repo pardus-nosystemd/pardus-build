@@ -5,5 +5,5 @@ apt purge libreoffice-common -y
 apt purge firefox-esr -y
 apt install librewolf -y
 apt install mpv -y
-apt purge gdebi packagekit xterm xfce4-sensors-plugin vlc xarchiver gimp xsane evolution synaptic drawing catfish -y
-apt autoremove -y
+apt purge audacious gdebi packagekit xterm xfce4-sensors-plugin vlc xarchiver gimp xsane evolution synaptic drawing catfish -y
+apt autoremove --purge -y
