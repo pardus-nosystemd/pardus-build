@@ -1,5 +1,7 @@
 # Pardus build
-Clone of official pardus xfce iso without debian-installer. This project is not official build.
+**Unofficial** Clone of pardus xfce iso. This project **is not official** build.
+
+This build is experimental so may not working good...
 
 ## Build:
 Run this as command root:
@@ -12,8 +14,9 @@ Run this as command root:
 * Debian-installer missing (teaiso not support)
 
 ## Extras
-* libreoffice replaced with libreoffice-latests
+* libreoffice removed
 * java removed.
 * linux kernel replaced with https://liquorix.net/
 * firefox-esr replaced with librewolf
-* journalctl destroyed
+* systemd removed (replaced with sysv-init from devuan repository)
+* backports repository added. 
