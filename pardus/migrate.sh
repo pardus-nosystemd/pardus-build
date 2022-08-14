@@ -9,6 +9,6 @@ apt-mark hold desktop-base # Do not replace theme
 apt-get update --allow-insecure-repositories
 apt-get install devuan-keyring --allow-unauthenticated -y
 apt-get update
-apt install elogind eudev sysvinit-core sysv-rc -y --allow-remove-essential -y
+apt install elogind eudev sysvinit-core sysv-rc ntp -y --allow-remove-essential -y
 apt-get full-upgrade -y
 apt-get autoremove --purge -y
