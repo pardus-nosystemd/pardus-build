@@ -5,7 +5,7 @@ publisher: Pardus GNU/Linux <https://pardus.org.tr>
 label: PARDUS_TEAISO
 application_id: Unofficial Pardus Linux Live/Rescue Media
 airootfs_directory_pre: airootfs
-linux_args: quiet components splash username=pardus hostname=pardus
+linux_args: locales=tr_TR.UTF-8,en_US.UTF-8 keyboard-layouts=tr username=pardus hostname=pardus user-fullname=Pardus noswap splash quiet
 arch: x86_64
 grub_cfg: grub.cfg
 packages:
