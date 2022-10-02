@@ -7,4 +7,5 @@ sudo apt install xorriso grub-pc-bin grub-efi mtools make python3 \
 make && make install
 ln -s sid /usr/share/debootstrap/scripts/yirmibir || true
 cd ../
-mkteaiso --profile=./pardus --output=/output/ --debug 2>&1
+mkteaiso --profile=./pardus-xfce --output=/output/ --debug 2>&1
+mkteaiso --profile=./pardus-gnome --output=/output/ --debug 2>&1

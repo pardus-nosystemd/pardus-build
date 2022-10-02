@@ -1,4 +1,4 @@
-name: pardus-xfce
+name: pardus-gnome
 distro: debian
 codename: yirmibir
 publisher: Pardus GNU/Linux <https://pardus.org.tr>
@@ -9,7 +9,9 @@ linux_args: locales=tr_TR.UTF-8,en_US.UTF-8 keyboard-layouts=tr username=pardus 
 arch: x86_64
 grub_cfg: grub.cfg
 packages:
- - packages.x86_64
+ - firmware.x86_64
+ - desktop.x86_64
+ - live.x86_64
 customize_airootfs_pre:
  - accept_nonfree.sh
 customize_airootfs:

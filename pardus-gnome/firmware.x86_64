@@ -1,15 +1,3 @@
-#bootloader and gnupg
-grub-pc-bin
-grub-efi
-grub-efi-ia32-bin
-gnupg
-#live-boot stuff
-live-config
-live-boot
-user-setup
-#kernel
-#linux-image-amd64
-#firmwares
 zd1211-firmware
 firmware-linux
 firmware-netxen
@@ -33,10 +21,3 @@ firmware-samsung
 firmware-siano
 firmware-sof-signed
 firmware-ti-connectivity
-#desktop stuff
-pardus-xfce-desktop
-#live stuff
-pardus-installer
-lvm2
-cryptsetup-initramfs
-pardus-boot-repair
