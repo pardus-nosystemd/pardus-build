@@ -1,5 +1,6 @@
 pardus-xfce-desktop
 xinit
 pavucontrol
+pulseaudio
 file-roller
 --no-install-recommends
