@@ -1,5 +1,5 @@
 # Pardus build
-**Unofficial** Clone of pardus xfce iso. This project **is not official** build.
+**Unofficial** Clone of pardus iso. This project **is not official** build.
 
 This build is experimental so may not working good...
 
