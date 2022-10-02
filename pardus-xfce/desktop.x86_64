@@ -1,6 +1,5 @@
 pardus-xfce-desktop
 xinit
-pardus-icon-theme
-pardus-gtk-theme
 pavucontrol
+file-roller
 --no-install-recommends

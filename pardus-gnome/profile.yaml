@@ -12,6 +12,7 @@ packages:
  - firmware.x86_64
  - desktop.x86_64
  - live.x86_64
+ - pardus.x86_64
 customize_airootfs_pre:
  - accept_nonfree.sh
 customize_airootfs:
