@@ -1,1 +1,3 @@
 pardus-xfce-desktop
+xinit
+--no-install-recommends
