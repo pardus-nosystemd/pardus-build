@@ -1,1 +1,3 @@
 pardus-gnome-desktop
+xinit
+--no-install-recommends
