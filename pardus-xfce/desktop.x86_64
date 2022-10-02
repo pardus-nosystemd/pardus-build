@@ -1,3 +1,6 @@
 pardus-xfce-desktop
 xinit
+pardus-icon-theme
+pardus-gtk-theme
+pavucontrol
 --no-install-recommends
