@@ -1,3 +1,13 @@
 pardus-gnome-desktop
+nautilus
+pavucontrol
+pardus-icon-theme
+pardus-gtk-theme
+gnome-screenshot
+gnome-shell-extension-dashtodock
+gnome-shell-extension-desktop-icons-ng
+gnome-shell-extension-restart-shell
+gnome-shell-extension-top-icons-plus
+gnome-tweak-tool
 xinit
 --no-install-recommends
