@@ -1,0 +1,15 @@
+lsb-release
+plasma-desktop
+plasma-nm
+plasma-pa
+dolphin
+konsole
+kwin-x11
+dbus-x11
+firefox-esr
+qml-module-org-kde-newstuff
+systemsettings
+lightdm
+xserver-xorg
+xinit
+desktop-base

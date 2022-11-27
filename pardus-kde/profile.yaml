@@ -1,0 +1,23 @@
+name: pardus-kde
+distro: debian
+codename: yirmibir
+publisher: Pardus GNU/Linux <https://pardus.org.tr>
+label: PARDUS_TEAISO
+application_id: Unofficial Pardus Linux Live/Rescue Media
+airootfs_directory_pre: airootfs
+linux_args: locales=tr_TR.UTF-8,en_US.UTF-8 keyboard-layouts=tr username=pardus hostname=pardus user-fullname=Pardus noswap splash quiet
+arch: x86_64
+grub_cfg: grub.cfg
+packages:
+ - firmware.x86_64
+ - desktop.x86_64
+ - live.x86_64
+ - pardus.x86_64
+customize_airootfs_pre:
+ - accept_nonfree.sh
+customize_airootfs:
+  - remove-java.sh
+  - package-updates.sh
+  - replace-kernel.sh
+  - migrate.sh
+repository: https://depo.pardus.org.tr/pardus
