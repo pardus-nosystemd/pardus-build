@@ -3,6 +3,10 @@
 
 This build is experimental so may not working good...
 
+# login information
+* username: pardus
+* password: live
+
 ## Build:
 Run this as command root:
 `mkteaiso --profile=./pardus --output=./output --debug`
