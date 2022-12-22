@@ -12,3 +12,4 @@ lightdm
 xserver-xorg
 xinit
 desktop-base
+--no-install-recommends
