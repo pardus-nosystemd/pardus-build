@@ -3,4 +3,5 @@ xinit
 pavucontrol
 pulseaudio
 file-roller
+sudo
 --no-install-recommends
