@@ -12,4 +12,5 @@ lightdm
 xserver-xorg
 xinit
 desktop-base
+pardus-lightdm-greeter
 --no-install-recommends
