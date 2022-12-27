@@ -12,4 +12,5 @@ file-roller
 xinit
 lightdm
 pardus-lightdm-greeter
+sudo
 --no-install-recommends
