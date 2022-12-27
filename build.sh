@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 git clone https://gitlab.com/tearch-linux/applications-and-tools/teaiso
 cd teaiso
 sudo apt update

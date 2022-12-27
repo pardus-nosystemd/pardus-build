@@ -7,8 +7,8 @@ EOF
 rm -f /var/lib/dpkg/info/systemd.prerm
 apt-mark hold desktop-base # Do not replace theme
 apt-get update --allow-insecure-repositories
-apt-get install devuan-keyring --allow-unauthenticated -y
+apt-get install devuan-keyring --allow-unauthenticated -y -o Dpkg::Options::="--force-confnew"
 apt-get update
-apt install elogind eudev sysvinit-core sysv-rc ntp -y --allow-remove-essential -y
-apt-get full-upgrade -y
+apt install elogind eudev sysvinit-core sysv-rc ntp -y --allow-remove-essential -y -o Dpkg::Options::="--force-confnew"
+apt-get full-upgrade -y -o Dpkg::Options::="--force-confnew"
 apt-get autoremove --purge -y
