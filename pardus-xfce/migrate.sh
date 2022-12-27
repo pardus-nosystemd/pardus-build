@@ -11,4 +11,5 @@ apt-get install devuan-keyring --allow-unauthenticated -y -o Dpkg::Options::="--
 apt-get update
 apt install elogind eudev sysvinit-core sysv-rc ntp -y --allow-remove-essential -y -o Dpkg::Options::="--force-confnew"
 apt-get full-upgrade -y -o Dpkg::Options::="--force-confnew"
+apt-get full-upgrade -t stable-backports -y -o Dpkg::Options::="--force-confnew"
 apt-get autoremove --purge -y
