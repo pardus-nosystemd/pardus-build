@@ -13,6 +13,7 @@ repository: https://pkgmaster.devuan.org/merged
 keyring_package: devuan-keyring
 packages:
  - ../common/firmware.x86_64
+ - ../common/pardus.x86_64
  - desktop.x86_64
  - ../common/live.x86_64
 customize_airootfs_pre:
