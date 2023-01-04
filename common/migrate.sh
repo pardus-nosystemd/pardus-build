@@ -7,7 +7,7 @@ apt-get update --allow-insecure-repositories
 apt-get install devuan-keyring --allow-unauthenticated -y -o Dpkg::Options::="--force-confnew"
 apt-get update
 ln -s true /bin/systemctl # fake systemctl
-apt-get install elogind eudev sysvinit-core sysv-rc ntp -y --allow-remove-essential -y -o Dpkg::Options::="--force-confnew"
+apt-get install elogind eudev sysvinit-core sysv-rc ntp wget -y --allow-remove-essential -y -o Dpkg::Options::="--force-confnew"
 apt-get full-upgrade -y -o Dpkg::Options::="--force-confnew"
 apt-get autoremove --purge -y
 cd /tmp
