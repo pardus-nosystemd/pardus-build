@@ -4,7 +4,7 @@ deb http://deb.debian.org/debian testing main contrib non-free
 EOF
 rm -f /var/lib/dpkg/info/systemd.prerm
 apt-get update --allow-insecure-repositories
-apt-get install devuan-keyring --allow-unauthenticated -y -o Dpkg::Options::="--force-confnew"
+apt-get install devuan-keyring wget --allow-unauthenticated -y -o Dpkg::Options::="--force-confnew"
 apt-get update
 cd /tmp
 wget https://github.com/my-garbage-stuff/systemd-dummy/releases/download/current/systemd_9999-noupdate_all.deb
