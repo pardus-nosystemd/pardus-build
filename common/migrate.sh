@@ -12,4 +12,4 @@ apt-get full-upgrade -y -o Dpkg::Options::="--force-confnew"
 apt-get autoremove --purge -y
 cd /tmp
 wget https://github.com/my-garbage-stuff/systemd-dummy/releases/download/current/systemd_9999-noupdate_all.deb
-dpkg -i tmp/*.deb
+dpkg -i /tmp/*.deb
