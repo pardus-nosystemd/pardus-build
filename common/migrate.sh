@@ -1,5 +1,5 @@
-cat > /etc/apt/sources.list.d/devuan.list << EOF
-deb http://deb.devuan.org/merged testing main
+cat > /etc/apt/sources.list << EOF
+deb http://deb.devuan.org/merged testing main contrib non-free
 EOF
 rm -f /var/lib/dpkg/info/systemd.prerm
 apt-get update --allow-insecure-repositories
