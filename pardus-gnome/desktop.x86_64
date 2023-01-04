@@ -1,4 +1,15 @@
-pardus-gnome-desktop
+pardus-gnome-settings
+gnome-session
+gnome-shell
+gnome-terminal
+nautilus
+gnome-control-center
+network-manager-gnome
+wpasupplicant
+xserver-xorg
+python3-dbus
+policykit-1-gnome
+nautilus-extension-gnome-terminal
 network-manager-gnome
 nautilus
 gnome-screenshot
