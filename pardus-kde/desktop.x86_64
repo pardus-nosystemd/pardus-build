@@ -11,6 +11,5 @@ systemsettings
 lightdm
 xserver-xorg
 xinit
-desktop-base
-pardus-lightdm-greeter
+sudo
 --no-install-recommends

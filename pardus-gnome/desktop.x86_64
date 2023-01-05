@@ -15,13 +15,10 @@ network-manager-gnome
 nautilus
 gnome-screenshot
 gnome-shell-extension-dashtodock
-gnome-shell-extension-desktop-icons-ng
-gnome-shell-extension-restart-shell
 gnome-shell-extension-top-icons-plus
 gnome-tweak-tool
 file-roller
 xinit
 lightdm
-pardus-lightdm-greeter
 sudo
 --no-install-recommends

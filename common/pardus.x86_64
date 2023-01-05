@@ -1,3 +1,4 @@
+pardus-lightdm-greeter
 pardus-about
 pardus-image-writer
 pardus-package-installer
@@ -6,3 +7,4 @@ pardus-usb-formatter
 pardus-software
 pardus-icon-theme
 pardus-gtk-theme
+pardus-backgrounds
