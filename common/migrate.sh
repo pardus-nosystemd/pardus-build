@@ -10,6 +10,7 @@ wget https://github.com/my-garbage-stuff/systemd-dummy/releases/download/current
 wget https://github.com/pardus-nosystemd/desktop-base/releases/download/current/desktop-base_9999-noupdate_all.deb
 wget https://github.com/pardus-nosystemd/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
 apt install ./*.deb -yq --allow-downgrades
+apt-mark hold desktop-base # do not update desktop-base
 ln -s true /bin/systemctl # fake systemctl
 apt-get install elogind eudev sysvinit-core sysv-rc ntp wget -y --allow-remove-essential -y -o Dpkg::Options::="--force-confnew"
 apt-get full-upgrade -y -o Dpkg::Options::="--force-confnew"
