@@ -1,4 +1,4 @@
-name: pardus-gnome
+name: pardus-cinnamon
 distro: debian
 codename: testing
 variant: minbase
