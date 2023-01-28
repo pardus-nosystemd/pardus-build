@@ -2,6 +2,7 @@ wpasupplicant
 xserver-xorg
 python3-dbus
 policykit-1-gnome
+network-manager-gnome
 dbus-x11
 mate-desktop-environment-core
 file-roller
