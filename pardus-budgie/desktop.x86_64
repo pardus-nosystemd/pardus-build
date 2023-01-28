@@ -1,0 +1,11 @@
+wpasupplicant
+xserver-xorg
+python3-dbus
+policykit-1-gnome
+dbus-x11
+budgie-desktop
+file-roller
+xinit
+lightdm
+sudo
+--no-install-recommends

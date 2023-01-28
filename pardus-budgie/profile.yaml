@@ -1,0 +1,26 @@
+name: pardus-budgie
+distro: debian
+codename: testing
+variant: minbase
+publisher: Pardus GNU/Linux <https://pardus.org.tr>
+label: PARDUS_TEAISO
+application_id: Unofficial Pardus Linux Live/Rescue Media
+airootfs_directory_pre: airootfs
+linux_args: locales=tr_TR.UTF-8,en_US.UTF-8 keyboard-layouts=tr username=pardus hostname=pardus user-fullname=Pardus noswap splash quiet
+arch: x86_64
+grub_cfg: ../common/grub.cfg
+keyring_package: devuan-keyring
+repository: https://pkgmaster.devuan.org/merged
+packages:
+ - ../common/firmware.x86_64
+ - desktop.x86_64
+ - ../common/live.x86_64
+ - ../common/pardus.x86_64
+customize_airootfs_pre:
+ - ../common/pardus-keyring.sh
+ - ../common/accept_nonfree.sh
+ - ../common/migrate.sh
+customize_airootfs:
+  - ../common/remove-java.sh
+  - ../common/package-updates.sh
+  - ../common/replace-kernel.sh
