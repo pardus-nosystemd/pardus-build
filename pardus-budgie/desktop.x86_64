@@ -5,6 +5,8 @@ policykit-1-gnome
 dbus-x11
 budgie-desktop
 file-roller
+nautilus
+gnome-terminal
 xinit
 lightdm
 sudo
