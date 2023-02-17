@@ -8,6 +8,7 @@ xserver-xorg
 lightdm
 xinit
 xfce4
+xfce4-screenshooter
 firefox-esr
 xfce4-terminal
 desktop-base
