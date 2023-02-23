@@ -10,4 +10,6 @@ grub-efi-amd64-bin
 grub2-common
 grub-common
 grub-efi-ia32-bin
+efibootmgr
 gnupg
+--no-install-recommends
