@@ -5,7 +5,7 @@ cd teaiso
 sudo apt update
 sudo apt install xorriso grub-pc-bin grub-efi mtools make python3 \
     dosfstools e2fsprogs squashfs-tools python3-yaml \
-    gcc wget curl unzip xz-utils zstd debootstrap -y
+    gcc wget curl unzip xz-utils zstd debootstrap -y --no-install-recommends
 make && make install
 ln -s sid /usr/share/debootstrap/scripts/yirmibir || true
 cd ../
