@@ -9,7 +9,6 @@ cd teaiso
 make && make install
 ln -s sid /usr/share/debootstrap/scripts/yirmibir || true
 cd ../
-for desktop in xfce gnome cinnamon ; do
-    mkteaiso --profile=./pardus-$desktop --output=/output/ --debug 2>&1 &
+for desktop in xfce gnome cinnamon kde; do
+    mkteaiso --profile=./pardus-$desktop --output=/output/ --debug
 done
-wait
