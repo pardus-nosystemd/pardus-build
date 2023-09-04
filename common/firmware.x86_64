@@ -4,7 +4,6 @@ firmware-netxen
 firmware-ralink
 firmware-realtek
 firmware-iwlwifi
-firmware-intelwimax
 firmware-ipw2x00
 firmware-atheros
 firmware-bnx2
