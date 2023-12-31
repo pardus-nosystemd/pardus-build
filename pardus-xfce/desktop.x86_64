@@ -12,7 +12,6 @@ firefox-esr
 xfce4-terminal
 desktop-base
 pavucontrol
-pulseaudio
 file-roller
 sudo
 --no-install-recommends

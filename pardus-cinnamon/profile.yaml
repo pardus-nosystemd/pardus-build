@@ -23,4 +23,5 @@ customize_airootfs_pre:
 customize_airootfs:
   - ../common/remove-java.sh
   - ../common/package-updates.sh
+  - ../common/pipewire.sh
   - ../common/replace-kernel.sh

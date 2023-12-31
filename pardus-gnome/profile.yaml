@@ -22,5 +22,6 @@ customize_airootfs_pre:
  - ../common/migrate.sh
 customize_airootfs:
   - ../common/remove-java.sh
+  - ../common/pipewire.sh
   - ../common/package-updates.sh
   - ../common/replace-kernel.sh
