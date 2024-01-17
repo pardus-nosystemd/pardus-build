@@ -15,3 +15,9 @@ ln -s true /bin/systemctl # fake systemctl
 apt-get install elogind eudev sysvinit-core sysv-rc ntp wget -y --allow-remove-essential -y -o Dpkg::Options::="--force-confnew"
 apt-get full-upgrade -y -o Dpkg::Options::="--force-confnew"
 apt-get autoremove --purge -y
+
+#### fix eudev sed bug about usrmerge shit
+# install busybox into /bin as symlink
+apt install busybox-static -yq 
+$(which busybox) --install -s /bin
+ln -s /usr/bin/kmod /sbin/modprobe
