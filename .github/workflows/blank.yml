@@ -8,7 +8,7 @@ on:
 
 jobs:
     compile:
-        name: Teaiso
+        name: Build iso
         runs-on: ubuntu-latest
         steps:
           - name: Check out the repo
