@@ -17,5 +17,5 @@ nautilus \
 gnome-screenshot \
 file-roller \
 xinit \
-lightdm \
+gdm \
 sudo

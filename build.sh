@@ -6,7 +6,7 @@ set -ex
     gcc wget curl unzip xz-utils zstd debootstrap git -y --no-install-recommends
 ln -s sid /usr/share/debootstrap/scripts/yirmiuc-deb || true
 curdir=$PWD
-for desktop in xfce gnome; do
+for desktop in xfce gnome kde cinnamon; do
     mkdir -p work/$desktop
     cd work/$desktop
     bash ../../mkiso.sh $desktop
