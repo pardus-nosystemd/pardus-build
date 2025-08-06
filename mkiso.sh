@@ -23,9 +23,10 @@ set -ex
 mkdir iso || true
 
 #### For devuan
-debootstrap --variant=minbase --no-check-gpg --arch=amd64 stable chroot https://deb.debian.org/debian
-echo "deb https://deb.debian.org/debian stable main contrib non-free non-free-firmware" > chroot/etc/apt/sources.list
-
+if [ ! -d chroot ] ; then
+    debootstrap --variant=minbase --no-check-gpg --arch=amd64 stable chroot https://deb.debian.org/debian
+    echo "deb https://deb.debian.org/debian stable main contrib non-free non-free-firmware" > chroot/etc/apt/sources.list
+fi
 #### Set root password
 pass="live"
 echo -e "$pass\n$pass\n" | chroot chroot passwd
@@ -35,9 +36,6 @@ echo -e "$pass\n$pass\n" | chroot chroot passwd
 echo "APT::Sandbox::User root;" > chroot/etc/apt/apt.conf.d/99sandboxroot
 for i in dev dev/pts proc sys; do mount -o bind /$i chroot/$i; done
 chroot chroot apt-get install gnupg -y
-
-##### Devuan only
-chroot chroot apt-get install devuan-keyring -y
 
 #### live packages for debian/devuan
 chroot chroot apt-get install live-config live-boot -y
@@ -50,11 +48,11 @@ APT::Install-Suggests "0";
 EOF
 
 #### variant scripts
-for script in $(ls ../../common) ; do
+for script in $(ls ../../common | sort) ; do
     cat ../../common/$script | chroot chroot bash -ex
 done
 
-for script in $(ls ../../$variant) ; do
+for script in $(ls ../../$variant| sort) ; do
     cat ../../$variant/$script  | chroot chroot bash -ex
 done
 
