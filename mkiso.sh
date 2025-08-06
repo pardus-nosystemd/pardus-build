@@ -64,13 +64,15 @@ rm -rf chroot/var/lib/apt/lists/*
 find chroot/var/log/ -type f | xargs rm -f
 
 ### create iso template
-mkdir -p debjaro/boot || true
-mkdir -p debjaro/live || true
-ln -s live debjaro/casper || true
+mkdir -p iso/boot || true
+mkdir -p iso/live || true
 
+for kernel in $(ls chroot/lib/modules) ; do
+    chroot chroot update-initramfs -u -k $kernel
+done
 #### Copy kernel and initramfs (Debian/Devuan)
-cp -pf chroot/boot/initrd.img-* debjaro/boot/initrd.img
-cp -pf chroot/boot/vmlinuz-* debjaro/boot/vmlinuz
+cp -pf chroot/boot/initrd.img-* iso/boot/initrd.img
+cp -pf chroot/boot/vmlinuz-* iso/boot/vmlinuz
 
 #### Remove initrd.img for minimize iso size (optional)
 rm -rf chroot/boot/initrd.img-*

@@ -11,4 +11,6 @@ grub2-common \
 grub-common \
 grub-efi-ia32-bin \
 efibootmgr \
+linux-image-amd64 \
+initramfs-tools \
 gnupg
