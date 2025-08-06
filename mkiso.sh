@@ -34,7 +34,7 @@ echo -e "$pass\n$pass\n" | chroot chroot passwd
 #### Fix apt & bind
 # apt sandbox user root
 echo "APT::Sandbox::User root;" > chroot/etc/apt/apt.conf.d/99sandboxroot
-for i in dev dev/pts proc sys; do mount -o bind /$i chroot/$i; done
+for i in dev dev/pts proc sys; do mount -o bind /$i chroot/$i || true; done
 chroot chroot apt-get install gnupg -y
 
 #### live packages for debian/devuan
