@@ -1,6 +1,12 @@
 
 cat > /etc/apt/sources.list << EOF
-deb http://deb.devuan.org/merged stable main contrib non-free non-free-firmware
+deb http://deb.devuan.org/devuan stable main contrib non-free non-free-firmware
+deb http://deb.devuan.org/devuan stable-backports main contrib non-free non-free-firmware
+EOF
+cat > /etc/apt/preferences.d/devuan-backports_default << EOF
+Package: *
+Pin: release n=stable-backports
+Pin-Priority: 500
 EOF
 rm -f /var/lib/dpkg/info/systemd.p*
 apt-get update --allow-insecure-repositories
