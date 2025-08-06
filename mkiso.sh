@@ -95,4 +95,4 @@ echo '    initrd /boot/initrd.img' >> iso/boot/grub/grub.cfg
 echo '}' >> iso/boot/grub/grub.cfg
 
 #### Create iso
-grub-mkrescue chroot -o pardus-$variant.iso
+grub-mkrescue iso -o pardus-$variant.iso
