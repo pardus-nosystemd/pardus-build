@@ -10,5 +10,6 @@ for desktop in xfce gnome kde cinnamon; do
     mkdir -p work/$desktop
     cd work/$desktop
     bash ../../mkiso.sh $desktop
+    mv pardus-$desktop.iso ../../
     cd $curdir
 done

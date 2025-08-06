@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   schedule:
     - cron: "0 0 * * 6"
 
@@ -21,6 +21,7 @@ jobs:
                 run: |
                     cd /root
                     bash build.sh
+                    mv *.iso /output/
 
           - uses: "marvinpinto/action-automatic-releases@latest"
             with:
