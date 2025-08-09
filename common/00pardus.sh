@@ -6,5 +6,6 @@ EOF
 apt-get update --allow-insecure-repositories
 apt-get install pardus-archive-keyring --allow-unauthenticated -y -o Dpkg::Options::="--force-confnew"
 apt-get update
+apt-get full-upgrade -yq
 # install pardus software
 apt-get -yq install pardus-software pardus-update pardus-menus
