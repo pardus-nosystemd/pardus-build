@@ -15,6 +15,5 @@ desktop-base \
 pavucontrol \
 file-roller \
 pardus-lightdm-greeter \
-pardus-icon-theme \
 pardus-gtk-theme \
 sudo
