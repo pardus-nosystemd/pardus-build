@@ -6,7 +6,7 @@ if command -v apt ; then
         dosfstools e2fsprogs squashfs-tools python3-yaml ca-certificates \
         gcc wget curl unzip xz-utils zstd debootstrap git -y --no-install-recommends
 fi
-ln -s sid /usr/share/debootstrap/scripts/yirmiuc-deb || true
+ln -s sid /usr/share/debootstrap/scripts/yirmibes-deb || true
 curdir=$PWD
 for desktop in xfce gnome kde cinnamon; do
     mkdir -p work/$desktop
