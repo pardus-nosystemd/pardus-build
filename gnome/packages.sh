@@ -9,7 +9,6 @@ network-manager-gnome \
 wpasupplicant \
 xserver-xorg \
 python3-dbus \
-policykit-1-gnome \
 dbus-x11 \
 nautilus-extension-gnome-terminal \
 network-manager-gnome \
