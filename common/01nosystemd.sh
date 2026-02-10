@@ -9,7 +9,7 @@ rm -f /var/lib/dpkg/info/systemd.p*
 apt-get update --allow-insecure-repositories
 apt-get install devuan-keyring -y --allow-unauthenticated
 apt-get update
-apt install elogind libpam-elogind sysvinit-core openrc systemd- systemd-sysv- -y --allow-remove-essential
+apt install elogind libpam-elogind sysvinit-core sysv-rc systemd- systemd-sysv- -y --allow-remove-essential
 apt-mark hold systemd || true
 apt-mark hold libsystemd0 || true
 apt-mark hold libsystemd-shared || true
